@@ -1,0 +1,47 @@
+body {
+    margin: 0; 
+}
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    border: 5px solid salmon;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+div {
+    font-size: 3vh;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 15vw ;
+    grid-template-rows: 10vh 5vh 5vh 5vh 5vh 5vh 10vh 5vh 5vh 45vh;
+    background-color: aqua;
+    border: 5px solid green;
+    padding-left: 5px;
+}
+.header {
+    display: grid;
+    border: 5px solid brown;
+    grid-template-columns: 30vw 30vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-auto-rows: 25vh;
+    border: 5px solid grey;
+    gap: 1vw;
+}
+
+.box {
+    border-left: 5px solid goldenrod;
+    border-radius: 5px;
+    text-align: center;
+    background-color: aliceblue;
+}
