@@ -5,7 +5,7 @@ body {
 .wrapper {
     display: flex;
     align-items: flex-start;
-    border: 5px solid salmon;
+    /* border: 5px solid salmon; */
 }
 
 .main {
@@ -16,21 +16,32 @@ body {
 
 .dashboard {
     display: grid;
+    width: 15vw;
+    align-self: stretch;
     color: white;
     font-size: 3vh;
-    grid-template-columns: 20vw;
-    grid-template-rows: 10vh 5vh 5vh 5vh 5vh 5vh 10vh 5vh 5vh 45vh;
+    grid-template-columns: 1fr;
     background-color: royalblue;
-    border: 5px solid green;
+    /* border: 5px solid green; */
     padding-left: 2vh;
+    gap: 4vh;
 }
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.blank {
+    height: 35vh;
+}
+
 .header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     padding: 2vh;
     gap: 2vh;
-    border: 5px solid brown;
+    /* border: 5px solid brown; */
 }
 
 .search {
@@ -133,6 +144,17 @@ button {
     margin: 0;
 }
 
-/* .sidebar > div {
+.item {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+.item img {
+    width: 4vh;
+    filter: brightness(0) invert(1);
+}
+
+/* .dashboard > div {
     border: 1px solid;
 } */
